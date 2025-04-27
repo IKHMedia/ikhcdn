@@ -30,7 +30,7 @@ function setCurrentConditions(){
   getElement('cc-gusts').innerHTML = gusts;
   getElement('cc-feelslike').innerHTML = feelsLike;
   getElement('cc-pressuretrend').innerHTML = pressureTrend;
-  getElement('ccicon').href.baseVal = 'assets/icons/conditions/' + currentIcon +'.svg';
+  getElement('ccicon').href.baseVal = 'https://cdn.ikhmedia.com/Weather/assets/icons/conditions/' + currentIcon +'.svg';
 }
 
 function createLogoElements(){
@@ -45,7 +45,7 @@ function createLogoElements(){
         logo.style.width = '85px';
         logo.style.height = '85px';
         logo.style.marginRight = '20px'
-        logo.src = 'assets/timeline/' + currentPage;
+        logo.src = 'https://cdn.ikhmedia.com/Weather/assets/timeline/' + currentPage;
         getElement('logo-stack').appendChild(logo);
         alreadyAddedLogos.push(currentPage);
       }
@@ -88,7 +88,7 @@ function setForecast(){
     var icon = new Image();
     icon.style.width = '100%';
     icon.style.height = '100%';
-    icon.src = 'assets/icons/conditions/' + forecastIcon[i] +'.svg';
+    icon.src = 'https://cdn.ikhmedia.com/Weather/assets/icons/conditions/' + forecastIcon[i] +'.svg';
     forecastIconElement[i].innerHTML = '';
     forecastIconElement[i].appendChild(icon);
   }
@@ -107,7 +107,7 @@ function setOutlook(){ // Also known as 7day page
     var icon = new Image();
     icon.style.width = '100%';
     icon.style.height = '100%';
-    icon.src = 'assets/icons/conditions/' + outlookIcon[i] +'.svg';
+    icon.src = 'https://cdn.ikhmedia.com/Weather/assets/icons/conditions/' + outlookIcon[i] +'.svg';
     iconElement.innerHTML = '';
     iconElement.appendChild(icon);
 
