@@ -1,7 +1,5 @@
 /*
-
-Access-Control-Allow-Methods: GET POST HEAD
-
+  
 Access-Control-Allow-Origin: *
   # Only connect to this site and subdomains via HTTPS for the next one year
   Strict-Transport-Security: max-age=31536000; includeSubDomains
@@ -49,6 +47,8 @@ Access-Control-Allow-Origin: *
 
 
 # Media: images, icons, video, audio, HTC
+/*.webp
+  Cache-Control: max-age=2592000, public
 /*.jpg
   Cache-Control: max-age=2592000, public
 /*.jpeg
